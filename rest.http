@@ -11,18 +11,18 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/api/v1/tasks/123
+GET http://localhost:3000/api/v1/tasks/616f8f52e726872880a56af7
 
 ###
 
-PATCH  http://localhost:3000/api/v1/tasks/123
+PATCH  http://localhost:3000/api/v1/tasks/616f8f52e726872880a56af7
 Content-Type: application/json
 
 {
-    "name": "bruno",
-    "age": 23
+    "name": "second task",
+    "completed": false
 }
 
 ###
 
-DELETE http://localhost:3000/api/v1/tasks/123
+DELETE http://localhost:3000/api/v1/tasks/616f78b12f85a439740bd2d2
