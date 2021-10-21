@@ -8,14 +8,14 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const TaskSchema = new mongoose_1.default.Schema({
     name: {
         type: String,
-        required: [true, "must provide name"],
+        required: [true, 'must provide name'],
         trim: true,
-        maxlength: [20, "name can not be more than 20 characters"],
+        maxlength: [20, 'name can not be more than 20 characters'],
     },
     completed: {
         type: Boolean,
         default: false,
     },
 });
-const Task = mongoose_1.default.model("Task", TaskSchema);
+const Task = mongoose_1.default.model('Task', TaskSchema);
 exports.Task = Task;

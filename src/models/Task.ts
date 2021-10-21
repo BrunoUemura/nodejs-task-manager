@@ -1,11 +1,11 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const TaskSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "must provide name"],
+    required: [true, 'must provide name'],
     trim: true,
-    maxlength: [20, "name can not be more than 20 characters"],
+    maxlength: [20, 'name can not be more than 20 characters'],
   },
   completed: {
     type: Boolean,
@@ -13,6 +13,6 @@ const TaskSchema = new mongoose.Schema({
   },
 });
 
-const Task = mongoose.model("Task", TaskSchema);
+const Task = mongoose.model('Task', TaskSchema);
 
 export { Task };
